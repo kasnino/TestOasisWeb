@@ -69,11 +69,11 @@ body {
         text-align: center;
         align-content: center;
         justify-content: center;
-        width: 194px;
+        width: 191px;
         display: flex;
-        border-radius: 10px;
+        border-radius: 25px;
         text-transform: capitalize;
-        height: 60px;
+        height: 44px;
         background: linear-gradient(60deg, #98288f, #d88ee0, #8785f2, #00fff7);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: white;
@@ -85,12 +85,9 @@ body {
           align-items: center;
           display: flex; }
       .description .title_main .relleno_boton .button_main:hover {
-        background: #1D976C;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #93F9B9, #1D976C);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+        background: linear-gradient(to top, #A5FECB, #20BDFF, #00c6ff); }
+        .description .title_main .relleno_boton .button_main:hover .letras {
+          color: #FFF; }
 
 .imagen-health {
   width: 100%;
@@ -114,12 +111,10 @@ body {
 .bloqueuno {
   width: 100%;
   height: 750px;
-  background: #5433FF;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #5433FF);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #5433FF);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: #FFF;
+                   /* fallback for old browsers 
+background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #5433FF);   Chrome 10-25, Safari 5.1-6 
+background: linear-gradient(to bottom, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .bloquedos {
   width: 100%;
@@ -181,17 +176,22 @@ body {
 
 .contenedor_servicios {
   width: 100%;
-  height: 400px;
+  height: 450px;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px; }
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  background: #FFF; }
   .contenedor_servicios .servicios_tipo1 {
     z-index: 4;
     width: 100%;
     height: 345px;
     background: white;
     border-top-right-radius: 80px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
     cursor: pointer;
     display: grid;
     grid-template-columns: 1;
@@ -199,7 +199,7 @@ body {
     grid-gap: 5px;
     margin: 8px;
     padding: 8px;
-    box-shadow: 0 2px 48px 0 rgba(245, 233, 233, 0.61); }
+    box-shadow: 0 2px 17px 0 rgba(189, 170, 170, 0.69); }
     .contenedor_servicios .servicios_tipo1 .icon {
       width: 100%;
       border-top-right-radius: 80px;
@@ -222,8 +222,6 @@ body {
       text-align: center;
       font-size: 23px;
       line-height: 1.5; }
-      .contenedor_servicios .servicios_tipo1 .title:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo1 .parrafo {
       margin-top: 30px;
       width: 100%;
@@ -234,19 +232,26 @@ body {
       font-size: 17px;
       line-height: 1.2;
       padding: 10px; }
-      .contenedor_servicios .servicios_tipo1 .parrafo:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo1:hover {
       background: #00c6ff;
       background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
       background: linear-gradient(to right, #0072ff, #00c6ff);
       transform: scale(1.1);
       transition: all 2s; }
+      .contenedor_servicios .servicios_tipo1:hover i {
+        color: white; }
+      .contenedor_servicios .servicios_tipo1:hover .title {
+        color: white; }
+      .contenedor_servicios .servicios_tipo1:hover .parrafo {
+        color: white; }
   .contenedor_servicios .servicios_tipo2 {
     width: 100%;
     height: 345px;
     background: white;
     border-top-right-radius: 80px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
     cursor: pointer;
     display: grid;
     grid-template-columns: 1;
@@ -254,7 +259,7 @@ body {
     grid-gap: 5px;
     margin: 8px;
     padding: 8px;
-    box-shadow: 0 2px 48px 0 rgba(245, 233, 233, 0.61); }
+    box-shadow: 0 2px 17px 0 rgba(189, 170, 170, 0.69); }
     .contenedor_servicios .servicios_tipo2 .icon {
       width: 100%;
       border-top-right-radius: 80px;
@@ -265,8 +270,6 @@ body {
         margin-top: 30px;
         color: #00c6ff;
         font-size: 61px; }
-        .contenedor_servicios .servicios_tipo2 .icon i:hover {
-          color: white; }
     .contenedor_servicios .servicios_tipo2 .title {
       margin-top: 35px;
       width: 100%;
@@ -277,8 +280,6 @@ body {
       text-align: center;
       font-size: 23px;
       line-height: 1.5; }
-      .contenedor_servicios .servicios_tipo2 .title:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo2 .parrafo {
       margin-top: 30px;
       width: 100%;
@@ -289,19 +290,26 @@ body {
       font-size: 17px;
       line-height: 1.2;
       padding: 10px; }
-      .contenedor_servicios .servicios_tipo2 .parrafo:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo2:hover {
       background: #00c6ff;
       background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
       background: linear-gradient(to right, #0072ff, #00c6ff);
       transform: scale(1.1);
       transition: all 2s; }
+      .contenedor_servicios .servicios_tipo2:hover i {
+        color: white; }
+      .contenedor_servicios .servicios_tipo2:hover .title {
+        color: white; }
+      .contenedor_servicios .servicios_tipo2:hover .parrafo {
+        color: white; }
   .contenedor_servicios .servicios_tipo3 {
     width: 100%;
     height: 345px;
     background: white;
     border-top-right-radius: 80px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
     cursor: pointer;
     display: grid;
     grid-template-columns: 1;
@@ -309,7 +317,7 @@ body {
     grid-gap: 5px;
     margin: 8px;
     padding: 8px;
-    box-shadow: 0 2px 48px 0 rgba(245, 233, 233, 0.61); }
+    box-shadow: 0 2px 17px 0 rgba(189, 170, 170, 0.69); }
     .contenedor_servicios .servicios_tipo3 .icon {
       width: 100%;
       border-top-right-radius: 80px;
@@ -320,8 +328,6 @@ body {
         margin-top: 30px;
         color: #00c6ff;
         font-size: 61px; }
-        .contenedor_servicios .servicios_tipo3 .icon i:hover {
-          color: white; }
     .contenedor_servicios .servicios_tipo3 .title {
       margin-top: 35px;
       width: 100%;
@@ -332,8 +338,6 @@ body {
       text-align: center;
       font-size: 23px;
       line-height: 1.5; }
-      .contenedor_servicios .servicios_tipo3 .title:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo3 .parrafo {
       margin-top: 30px;
       width: 100%;
@@ -344,19 +348,26 @@ body {
       font-size: 17px;
       line-height: 1.2;
       padding: 10px; }
-      .contenedor_servicios .servicios_tipo3 .parrafo:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo3:hover {
       background: #00c6ff;
       background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
       background: linear-gradient(to right, #0072ff, #00c6ff);
       transform: scale(1.1);
       transition: all 2s; }
+      .contenedor_servicios .servicios_tipo3:hover i {
+        color: white; }
+      .contenedor_servicios .servicios_tipo3:hover .title {
+        color: white; }
+      .contenedor_servicios .servicios_tipo3:hover .parrafo {
+        color: white; }
   .contenedor_servicios .servicios_tipo4 {
     width: 100%;
     height: 345px;
     background: white;
     border-top-right-radius: 80px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
     cursor: pointer;
     display: grid;
     grid-template-columns: 1;
@@ -364,7 +375,7 @@ body {
     grid-gap: 5px;
     margin: 8px;
     padding: 8px;
-    box-shadow: 0 2px 48px 0 rgba(245, 233, 233, 0.61); }
+    box-shadow: 0 2px 17px 0 rgba(189, 170, 170, 0.69); }
     .contenedor_servicios .servicios_tipo4 .icon {
       width: 100%;
       border-top-right-radius: 80px;
@@ -375,8 +386,6 @@ body {
         margin-top: 30px;
         color: #00c6ff;
         font-size: 61px; }
-        .contenedor_servicios .servicios_tipo4 .icon i:hover {
-          color: white; }
     .contenedor_servicios .servicios_tipo4 .title {
       margin-top: 35px;
       width: 100%;
@@ -387,8 +396,6 @@ body {
       text-align: center;
       font-size: 23px;
       line-height: 1.5; }
-      .contenedor_servicios .servicios_tipo4 .title:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo4 .parrafo {
       margin-top: 30px;
       width: 100%;
@@ -399,11 +406,62 @@ body {
       font-size: 17px;
       line-height: 1.2;
       padding: 10px; }
-      .contenedor_servicios .servicios_tipo4 .parrafo:hover {
-        color: white; }
     .contenedor_servicios .servicios_tipo4:hover {
+      background: #00c6ff;
+      background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+      background: linear-gradient(to right, #0072ff, #00c6ff);
       transform: scale(1.1);
-      transition: all 2s;
-      color: #FFF; }
+      transition: all 2s; }
+      .contenedor_servicios .servicios_tipo4:hover i {
+        color: white; }
+      .contenedor_servicios .servicios_tipo4:hover .title {
+        color: white; }
+      .contenedor_servicios .servicios_tipo4:hover .parrafo {
+        color: white; }
+
+/* Corazon frecuencia*/
+.heart-rate {
+  width: 150px;
+  height: 73px;
+  position: relative;
+  margin: auto; }
+
+.fade-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  top: 0;
+  right: 0;
+  animation: heartRateIn 2.5s linear infinite; }
+
+.fade-out {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -120%;
+  animation: heartRateOut 2.5s linear infinite;
+  background: white;
+  background: -moz-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, white 0%, white 80%, rgba(255, 255, 255, 0) 100%); }
+
+@keyframes heartRateIn {
+  0% {
+    width: 100%; }
+  50% {
+    width: 0; }
+  100% {
+    width: 0; } }
+@keyframes heartRateOut {
+  0% {
+    left: -120%; }
+  30% {
+    left: -120%; }
+  100% {
+    left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
