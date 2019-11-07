@@ -116,6 +116,7 @@ body {
   align-content: center;
   align-items: center;
   display: flex;
+  text-decoration: none;
 }
 .description .title_main .relleno_boton .button_main:hover {
   background: linear-gradient(to top, #A5FECB, #20BDFF, #00c6ff);
@@ -159,7 +160,7 @@ body {
   height: 800px;
   background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 
 .bloquetres {
@@ -569,8 +570,15 @@ body {
   }
 }
 /*formmmmmmmmmmmm*/
+.gridcontenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 5px;
+}
+
 /*FORMS*/
 .form-login {
+  font-family: Poppins, sans-serif;
   border-radius: 10px;
   padding: 20px;
   margin: 25px;
@@ -648,14 +656,14 @@ a.button,
 input.button,
 button {
   outline: none;
-  width: 30%;
+  width: 40%;
   text-align: center;
   display: inline-block;
   border: none;
   font: 500 16px/1 "Poppins", sans-serif;
   padding: 20px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 4px;
   background: var(--BotonColor);
   color: #FFF;
   position: relative;
@@ -727,9 +735,32 @@ input:checked + label span.box:after {
 .ladoopuesto {
   height: 100%;
   background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   width: 100%;
   left: 0;
   top: 0;
+}
+.ladoopuesto strong {
+  text-transform: uppercase;
+}
+.ladoopuesto .title_main {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.9;
+  width: 100%;
+  text-transform: capitalize;
+}
+.ladoopuesto h5 {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.9;
+  width: 100%;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
