@@ -961,7 +961,7 @@ cursor: pointer;
   content: "";
   background: rgba(22, 21, 21, 0.77);
   width: 100%;
-  height: 107%;
+  height: 113%;
 }
 
 
@@ -1078,22 +1078,88 @@ footer a .icons {
   font-size: 20px;
   color: var(--ColorLetrasDescription);
 }
-/** media queris**/
+/** media queris divisiones de poantalla**/
 
-@media screen and (max-width: 736px) {
-
+@media screen and (max-width: 400px) {
   /* Basic */
-
     body {
       min-width: 320px;
     }
-
     body, input, select, textarea {
       font-size: 11pt;
     }
+    .contain-main{
+      background: rebeccapurple;
+    }
+    .description{
+      background: none;
+      margin: 10px;
+    }
 
+    .description .title_main {
+      font-family: Poppins, sans-serif;
+      font-size: 2rem;
+      margin: 10px;
+    }
+
+    .imagen-health {
+
+      background-size: 39%;
+      /* display: flex; */
+      /* justify-content: flex-end; */
+      /* align-items: flex-end; */
+      position: absolute;
+      /* justify-content: center; */
+      /* align-items: center; */
+      left: 30%;
+    }
   
+    .servicios {
+      font-family: Poppins, sans-serif;
+      font-size: 3rem;
+    }
+    .bloqueuno {
+      width: 100%;
+      height: 2078px;
+      background: #FFF;
+  }
 
+.bloquedos{
+  width: 100%;
+    height: 1074px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.contenedor-nombres {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+ 
+}
+
+input.input-form {
+  
+  height: 51px;
+  width: 95%;
+}
+.text-formulario {
+ 
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+}
+
+.gridcontenedor {
+  display: grid;
+   grid-template-columns: repeat(1, 1fr); 
+  margin: 5px;
+}
+    .contenedor_servicios {
+
+      height: 850px;
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+      /* grid-template-rows: repeat(2, 1fr); */
+
+  }
   /* BG */
-
 }
