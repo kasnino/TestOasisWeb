@@ -1152,6 +1152,16 @@ input.input-form {
    grid-template-columns: repeat(1, 1fr); 
   margin: 5px;
 }
+.right-list {
+ 
+  position: absolute;
+  right: 4px;
+ 
+}
+
+.iconoo {
+  margin-top: -85px;
+}
 
 .quotee:before {
   top: -51px;
