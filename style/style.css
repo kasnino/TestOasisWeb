@@ -28,7 +28,7 @@
 }
 
 body {
-  width: 100%;
+ 
   background: #43cea2;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
@@ -1081,15 +1081,23 @@ footer a .icons {
 /** media queris divisiones de poantalla**/
 
 @media screen and (max-width: 400px) {
+
+
+.imagen-health {
+  
+  background-size: 70%;
+}
+  
   /* Basic */
-    body {
-      min-width: 320px;
-    }
+ body{
+   width: 100%;
+ }
     body, input, select, textarea {
       font-size: 11pt;
     }
     .contain-main{
       background: rebeccapurple;
+      width: 100%;
     }
     .description{
       background: none;
@@ -1102,17 +1110,7 @@ footer a .icons {
       margin: 10px;
     }
 
-    .imagen-health {
 
-      background-size: 39%;
-      /* display: flex; */
-      /* justify-content: flex-end; */
-      /* align-items: flex-end; */
-      position: absolute;
-      /* justify-content: center; */
-      /* align-items: center; */
-      left: 30%;
-    }
   
     .servicios {
       font-family: Poppins, sans-serif;
