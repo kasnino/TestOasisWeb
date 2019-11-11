@@ -1000,6 +1000,11 @@ cursor: pointer;
     text-align: center;
     color: #00c6ff;
 }
+
+.caracteristicas-super .item1 .title{
+  font-size: 28px;
+    margin: 15px;
+}
 .caracteristicas-super .item1 .conten-item{
   cursor: pointer;
   z-index: 15;
@@ -1007,8 +1012,8 @@ cursor: pointer;
     align-content: center;
     align-items: center;
     text-align: center;
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
     background: #060606a1;
     color: rgba(255, 255, 255, 0.85);
     border-radius: 50%;
@@ -1027,6 +1032,11 @@ cursor: pointer;
     justify-content: center;
     text-align: center;
     color: #00c6ff;
+}
+
+.caracteristicas-super .item2 .title{
+  font-size: 28px;
+    margin: 15px;
 }
 
 .caracteristicas-super .item2 .conten-item{
@@ -1057,6 +1067,10 @@ cursor: pointer;
     text-align: center;
     color: #00c6ff;
 }
+.caracteristicas-super .item3 .title{
+  font-size: 28px;
+    margin: 15px;
+}
 
 .caracteristicas-super .item3 .conten-item{
   cursor: pointer;
@@ -1065,8 +1079,8 @@ cursor: pointer;
     align-content: center;
     align-items: center;
     text-align: center;
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
     background: #060606a1;
     color: rgba(255, 255, 255, 0.85);
     border-radius: 50%;
@@ -1094,18 +1108,101 @@ cursor: pointer;
     align-content: center;
     align-items: center;
     text-align: center;
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
     background: #060606a1;
     color: rgba(255, 255, 255, 0.85);
     border-radius: 50%;
     padding: 10px;
 }
 
+.caracteristicas-super .item4 .title{
+  font-size: 28px;
+    margin: 15px;
+    text-transform: capitalize;
+}
 .caracteristicas-infer{
   width: 100%;
   height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.capa-superior{
+
+  width: 100%;
+  height: 85PX;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #060606bd;
+  
+}
+
+.capa-superior .titulo-super{
+  color: #00c6ff;
+  margin: 13px;
+}
+
+.capa-superior  h5{
+  color: white;
+  margin: 15px;
+  font-size: 17px;
+}
+.capa-inferior{
  
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px;
+}
+
+.capa-inferior .lado-derecho{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.lista {
+  list-style: none;
+  color: white;
+}
+
+.lista li{
+  margin: 20px;
+  font-size: 20px;
+}
+
+.lista li span{
+  color: #00c6ff;
+  margin: 5px;
+}
+.capa-inferior .lado-izquierdo{
+  width: 100%;
+  height: 100%;
+ 
+}
+.caracteristicas-infer .contenedor-inferior{
+
+  width: 100%;
+ 
+  /* padding: 19px; */
+  /* margin: 15px; */
+  height: 100%;
+  border-radius: 15px;
+  background: #060606a1;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 20%;
+
+}
+
+.caracteristicas-super .item4 .parrafo{
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 /*animacion del icono flecha hacia abajo*/
@@ -1298,3 +1395,8 @@ input.input-form {
 }
   /* BG */
 }
+
+
+
+
+
